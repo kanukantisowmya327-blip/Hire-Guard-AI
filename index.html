@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="HireGuard AI — fair, explainable and human-centered hiring intelligence." />
+  <title>HireGuard AI · Responsible hiring intelligence</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#top" aria-label="HireGuard AI home">
+        <span class="brand-mark">✦</span>
+        <span>hireguard<span class="brand-ai">.ai</span></span>
+      </a>
+      <p class="workspace-label">WORKSPACE</p>
+      <nav aria-label="Main navigation">
+        <button class="nav-item active" data-view="overview"><span>⌂</span> Overview</button>
+        <button class="nav-item" data-view="candidates"><span>◉</span> Candidates <b>24</b></button>
+        <button class="nav-item" data-view="insights"><span>◒</span> Fairness insights</button>
+        <button class="nav-item" data-view="settings"><span>⚙</span> Settings</button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="trust-card"><span class="pulse"></span><div><strong>Systems healthy</strong><small>Last checked just now</small></div></div>
+        <div class="profile"><div class="avatar">KS</div><div><strong>Kanuka S.</strong><small>Administrator</small></div><span>•••</span></div>
+      </div>
+    </aside>
+
+    <main class="main-content" id="top">
+      <header class="topbar"><div class="breadcrumb">Workspace <span>/</span> <strong>Overview</strong></div><div class="top-actions"><button class="icon-button" aria-label="Notifications">♧<i></i></button><button class="help-button">? &nbsp; Help center</button></div></header>
+      <section class="page-header"><div><p class="eyebrow">WEDNESDAY, SEPTEMBER 23, 2026</p><h1>Good morning, Kanuka <span>✦</span></h1><p class="subtitle">Make every hiring decision clearer, fairer, and more human.</p></div><button class="primary-button" id="addCandidate">＋ Add candidate</button></section>
+
+      <section class="metrics" aria-label="Hiring metrics">
+        <article class="metric-card"><div class="metric-icon blue">◉</div><div><span>Active candidates</span><strong>24</strong><small class="positive">↑ 12% <em>vs. last month</em></small></div></article>
+        <article class="metric-card"><div class="metric-icon purple">⌁</div><div><span>Avg. fairness score</span><strong>94.2%</strong><small class="positive">↑ 2.4% <em>vs. last month</em></small></div></article>
+        <article class="metric-card"><div class="metric-icon orange">◷</div><div><span>Time to shortlist</span><strong>2.4d</strong><small class="positive">↓ 0.8d <em>vs. last month</em></small></div></article>
+        <article class="metric-card"><div class="metric-icon green">✓</div><div><span>Human reviews</span><strong>18</strong><small class="neutral"><em>Awaiting your review</em></small></div></article>
+      </section>
+
+      <section class="content-grid">
+        <article class="panel chart-panel"><div class="panel-heading"><div><h2>Hiring activity</h2><p>Candidate movement over the last 30 days</p></div><select id="rangeSelect" aria-label="Chart date range"><option>Last 30 days</option><option>Last 90 days</option><option>This year</option></select></div><div class="legend"><span><i class="dot blue-dot"></i>Applications</span><span><i class="dot purple-dot"></i>Shortlisted</span></div><div class="chart-wrap"><div class="y-axis"><span>80</span><span>60</span><span>40</span><span>20</span><span>0</span></div><div class="chart"><div class="grid-lines"><i></i><i></i><i></i><i></i><i></i></div><svg viewBox="0 0 700 220" preserveAspectRatio="none" aria-label="Hiring activity line chart"><defs><linearGradient id="area" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#6c78ff" stop-opacity=".22"/><stop offset="1" stop-color="#6c78ff" stop-opacity="0"/></linearGradient></defs><path class="area" d="M0,176 C45,155 55,170 90,136 S155,120 190,140 S245,98 285,113 S345,55 385,92 S445,72 475,84 S530,33 565,67 S620,50 650,38 S680,28 700,22 V220 H0 Z"/><path class="line applications" d="M0,176 C45,155 55,170 90,136 S155,120 190,140 S245,98 285,113 S345,55 385,92 S445,72 475,84 S530,33 565,67 S620,50 650,38 S680,28 700,22"/><path class="line shortlisted" d="M0,201 C45,188 60,197 90,180 S145,169 190,184 S245,158 285,165 S345,133 385,145 S445,126 475,139 S530,103 565,125 S620,110 650,99 S680,94 700,84"/></svg><div class="x-axis"><span>Aug 25</span><span>Sep 1</span><span>Sep 8</span><span>Sep 15</span><span>Sep 23</span></div></div></div></article>
+
+        <article class="panel fairness-panel"><div class="panel-heading"><div><h2>Fairness snapshot</h2><p>Across all active roles</p></div><button class="more-button">•••</button></div><div class="score-ring"><div><strong>94.2</strong><span>/ 100</span></div></div><p class="score-status"><span class="status-dot"></span> Excellent balance</p><p class="score-description">Your hiring process is performing above the recommended fairness threshold.</p><button class="outline-button" data-view="insights">View detailed insights <span>→</span></button></article>
+      </section>
+
+      <section class="lower-grid"><article class="panel activity-panel"><div class="panel-heading"><div><h2>Recent activity</h2><p>Keep up with your hiring team</p></div><button class="text-button">View all →</button></div><div class="activity-list"><div class="activity"><div class="activity-icon indigo">✦</div><div><strong>Fairness review completed</strong><p>Product Designer · Role #PD-204</p></div><time>12 min ago</time></div><div class="activity"><div class="activity-icon peach">＋</div><div><strong>New candidate added</strong><p>Alex Morgan applied for Product Designer</p></div><time>43 min ago</time></div><div class="activity"><div class="activity-icon mint">✓</div><div><strong>Interview feedback submitted</strong><p>Jordan Lee · Engineering Manager</p></div><time>2 hrs ago</time></div></div></article><article class="panel review-panel"><div class="panel-heading"><div><h2>Needs your review</h2><p>Human judgment makes AI better</p></div><span class="count-badge">3</span></div><div class="review-item"><div class="candidate-avatar">AM</div><div><strong>Alex Morgan</strong><small>Product Designer · Fairness check</small></div><button class="review-btn">Review →</button></div><div class="review-item"><div class="candidate-avatar violet">JL</div><div><strong>Jordan Lee</strong><small>Engineering Manager · Interview</small></div><button class="review-btn">Review →</button></div><button class="outline-button full">Open review queue <span>→</span></button></article></section>
+      <footer>HireGuard AI <span>·</span> Built for better decisions <span>·</span> <a href="#">Privacy & responsible AI</a></footer>
+    </main>
+  </div>
+  <div class="modal hidden" id="candidateModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal-card"><button class="close" id="closeModal" aria-label="Close">×</button><p class="eyebrow">NEW PROFILE</p><h2 id="modalTitle">Add a candidate</h2><p class="modal-copy">Start a fair, explainable review for a new candidate.</p><form id="candidateForm"><label>Candidate name<input required name="name" placeholder="e.g. Taylor Smith" /></label><label>Role<select name="role"><option>Product Designer</option><option>Software Engineer</option><option>Marketing Manager</option></select></label><button class="primary-button" type="submit">Add to review queue</button></form></div></div>
+  <script src="app.js"></script>
+</body>
+</html>
